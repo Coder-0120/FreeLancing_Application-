@@ -1,0 +1,163 @@
+.freelancer-home {
+  padding: 6vh 5vw;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #eef3ff, #f9f6ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.freelancer-heading {
+  text-align: center;
+  color: #3b3b3b;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 3vh;
+}
+
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5vh;
+}
+
+.home-card {
+  width: 240px;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(6px);
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.home-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.home-card p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.home-card button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.home-card button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.freelancer-details {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 2.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.freelancer-details h4 {
+  font-size: 1.2rem;
+  color: #3b3b3b;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.skill {
+  background: linear-gradient(135deg, #6575b8, #77afdd);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.btn-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #6a7bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: #4b5cff;
+}
+
+.freelancer-details-update .form-control {
+  border-radius: 0.4rem;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+}
+
+.update-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.btn-save,
+.btn-cancel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-save {
+  background-color: #5da2ff;
+  border: none;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background-color: #3e87f9;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  border: 1.5px solid #5da2ff;
+  color: #5da2ff;
+}
+
+.btn-cancel:hover {
+  background-color: #5da2ff;
+  color: #fff;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 20vh;
+  color: #666;
+  font-weight: 500;
+}
+  /* background: linear-gradient(135deg, #f5f7ff, #c0e3ff); */

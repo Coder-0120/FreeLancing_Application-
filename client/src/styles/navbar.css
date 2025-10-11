@@ -1,0 +1,75 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 50;
+}
+
+.navbar-logo {
+  color: #ffb26b;
+  font-size: 1.8rem;
+  font-family: "Kaushan Script", cursive;
+  cursor: pointer;
+}
+
+.navbar-logo span {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav-options {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-options p {
+  margin: 0;
+  color: #ddd;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-options p::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #ff914d, #ff5e62);
+  transition: width 0.3s ease;
+}
+
+.nav-options p:hover {
+  color: #fff;
+}
+
+.nav-options p:hover::after {
+  width: 100%;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #ff5e62, #ff914d);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 100, 50, 0.4);
+}

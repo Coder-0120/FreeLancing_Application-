@@ -1,0 +1,113 @@
+.client-applications-page {
+  padding: 2vh 2vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5vh;
+}
+
+.applications-header h3 {
+  font-size: 1.5rem;
+  color: #0077b6;
+}
+
+.applications-header select {
+  width: 50%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #00b4d8;
+}
+
+.client-applications-body {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
+              rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 76vh;
+  border-radius: 0.7rem;
+  margin-top: 2vh;
+  padding: 1.5vh 2vw;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.client-application {
+  padding: 1.5vh 0;
+  transition: background 0.2s ease;
+}
+
+.client-application:hover {
+  background-color: rgba(12, 105, 148, 0.07);
+}
+
+.client-application-body {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: rgba(110, 109, 109, 0.23);
+}
+
+.client-application-half {
+  width: 48%;
+}
+
+.client-application-half h4 {
+  font-size: 1.2rem;
+  color: rgba(26, 83, 121, 0.7);
+}
+
+.client-application-half p {
+  font-size: 0.85rem;
+  margin: 0.5vh 0;
+}
+
+.application-section {
+  margin: 1vh 0;
+}
+
+.application-section h5 {
+  font-size: 1rem;
+  color: #05516a;
+  margin-bottom: 0.5vh;
+}
+
+.application-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.application-skills span {
+  color: #ee4950;
+  border: 1px solid #ee4950;
+  padding: 4px 10px;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+
+.client-application-half h6 {
+  font-size: 0.9rem;
+  margin-top: 0.5vh;
+}
+
+.client-application-half h6 b {
+  color: #676867;
+}
+
+.approve-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 1vh;
+}
+
+.approve-btns button {
+  width: 10vw;
+  min-width: 80px;
+  padding: 0.4rem 0.6rem;
+}

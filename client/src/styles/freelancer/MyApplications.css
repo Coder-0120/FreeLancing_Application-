@@ -1,0 +1,164 @@
+.user-applications-page {
+  padding: 2vh 2vw;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+  min-height: 90vh;
+}
+
+.user-applications-page h3 {
+  font-size: 1.6rem;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ---------- APPLICATIONS BODY ---------- */
+
+.user-applications-body {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+  height: 76vh;
+  padding: 2vh 2vw;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------- EACH APPLICATION CARD ---------- */
+
+.user-application {
+  padding: 2vh 2vw;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.user-application:hover {
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  box-shadow: 0 6px 16px rgba(0, 119, 182, 0.15);
+  transform: translateY(-3px);
+}
+
+/* ---------- APPLICATION BODY LAYOUT ---------- */
+
+.user-application-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: rgba(110, 109, 109, 0.2);
+  height: auto;
+}
+
+/* ---------- LEFT & RIGHT HALVES ---------- */
+
+.user-application-half {
+  width: 48%;
+}
+
+/* ---------- HEADINGS & TEXT ---------- */
+
+.user-application-half h4 {
+  font-size: 1.3rem;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.user-application-half p {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.5vh 0;
+  line-height: 1.5;
+}
+
+.user-application-half h5 {
+  font-size: 1rem;
+  color: #023e8a;
+  margin: 0.5vh 0;
+  font-weight: 500;
+}
+
+.user-application-half h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0077b6;
+  margin-top: 0.5vh;
+}
+
+/* ---------- SPANS & SKILLS ---------- */
+
+.user-application-half span {
+  display: block;
+  margin: 1vh 0;
+}
+
+.application-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5vh;
+}
+
+.application-skills p {
+  font-size: 0.75rem;
+  color: #0077b6;
+  border: 1px solid #00b4d8;
+  background-color: #e3f2fd;
+  padding: 4px 10px;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+}
+
+.application-skills p:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* ---------- STATUS STYLING ---------- */
+
+.user-application-half h6 b {
+  text-transform: capitalize;
+  padding: 3px 8px;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #0077b6;
+}
+
+.user-application-half h6 b.completed {
+  background-color: #2e7d32;
+}
+
+.user-application-half h6 b.assigned {
+  background-color: #ff9800;
+}
+
+/* ---------- HR SEPARATOR ---------- */
+
+.user-application hr {
+  height: 2px;
+  background-color: rgba(84, 86, 86, 0.2);
+  width: 100%;
+  margin-top: 1.5rem;
+  border: none;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+.user-applications-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-applications-body::-webkit-scrollbar-thumb {
+  background-color: #90e0ef;
+  border-radius: 10px;
+}
+
+.user-applications-body::-webkit-scrollbar-track {
+  background-color: transparent;
+}

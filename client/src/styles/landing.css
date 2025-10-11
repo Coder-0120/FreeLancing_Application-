@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Kaushan+Script&display=swap");
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/landing-bg.jpg") no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.75), rgba(50, 50, 50, 0.4));
+  z-index: 0;
+}
+
+/* Navbar */
+.landing-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-btn {
+  background: transparent;
+  color: #ffffffde;
+  border: 1.5px solid #ffffffaa;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #ffffff25;
+  color: #fff;
+  border-color: #fff;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.landing-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 800px;
+  margin-top: -70px;
+  padding: 0 20px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 span {
+  color: #f6ad55;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #e0dfdf;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.join-btn {
+  background: linear-gradient(135deg, #ff914d, #ff5e62);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 100, 50, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 5;
+}
+
+.join-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  box-shadow: 0 0 25px rgba(255, 120, 50, 0.6);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Features Section */
+.features {
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px 25px;
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ffb26b;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(15deg);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}

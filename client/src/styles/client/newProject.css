@@ -1,0 +1,146 @@
+/* ------------------ PAGE ------------------ */
+.new-project-page {
+  margin: 5vh 3vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vh 3vw;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px 0px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.new-project-page h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 3vh;
+}
+
+/* ------------------ FORM ------------------ */
+.new-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* ------------------ FLOATING INPUTS & TEXTAREA ------------------ */
+.form-floating {
+  position: relative;
+}
+
+.form-floating input,
+.form-floating textarea {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid #00b4d8;
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+  background-color: #fff;
+}
+
+.form-floating label {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: #0077b6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  padding: 0 4px;
+  background-color: transparent;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label,
+.form-floating textarea:focus + label,
+.form-floating textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 12px;
+  font-size: 0.75rem;
+  color: #023e8a;
+  /* background-color: #f8f9fa; match input background  */
+}
+
+/* ------------------ INPUTS & TEXTAREA IN SPAN ------------------ */
+.new-project-form span {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+
+/* ------------------ SUBMIT BUTTON ------------------ */
+.new-project-form button {
+  width: 100%;
+  height: 8vh;
+  border: 1.5px solid #0077b6;
+  background-color: #ffffff;
+  color: #0077b6;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.new-project-form button:hover {
+  background-color: #0077b6;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 119, 182, 0.25);
+}
+
+/* ------------------ TEXTAREA ------------------ */
+.new-project-form textarea {
+  min-height: 28vh;
+  resize: vertical;
+}
+
+/* ------------------ SKILLS TAGS ------------------ */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #e3f2fd;
+  color: #0077b6;
+  border: 1px solid #00b4d8;
+  padding: 4px 10px;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skill-tag button {
+  border: none;
+  background: none;
+  color: #0077b6;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.skill-tag button:hover {
+  color: #fff;
+  background-color: #0077b6;
+  border-radius: 50%;
+  padding: 0 2px;
+}

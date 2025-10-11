@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.auth-container {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/landing-bg.jpg") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(50, 50, 50, 0.5)
+  );
+  z-index: 0;
+}
+
+.auth-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+.auth-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffb26b;
+}
+
+.subtitle {
+  color: #ddd;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-input {
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(251, 251, 164);
+}
+
+.auth-input input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(251, 251, 164);
+  color: #000000;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-input input:focus {
+  background-color: rgb(251, 251, 164);
+  box-shadow: 0 0 10px rgba(255, 145, 77, 0.5);
+}
+
+.auth-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(251, 251, 164);
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.auth-btn {
+  background: linear-gradient(135deg, #ff914d, #ff5e62);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 100, 50, 0.4);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  box-shadow: 0 0 25px rgba(255, 120, 50, 0.6);
+}
+
+.switch-auth {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.switch-auth span {
+  color: #ffb26b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.switch-auth span:hover {
+  text-decoration: underline;
+}
+
+/* Float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
