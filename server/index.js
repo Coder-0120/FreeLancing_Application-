@@ -16,6 +16,7 @@ const Project=require("./Models/projectSchema.js");
 const { Server } = require("socket.io");
 const http = require('http');
 const SocketHandler = require('./SocketHandler.js');
+const connectDB = require('./config/db.js');
 
 const app = express();
 
@@ -39,15 +40,10 @@ io.on("connection", (socket) =>{
 
     SocketHandler(socket);
 })
-
-
+connectDB();
+// app.use("/api",userRoutes);
+// app.use("/login",userRoutes);
 const PORT = 6001;
-
-mongoose.connect('mongodb://localhost:27017/Freelancing',{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(()=>{
-
 
     app.post('/register', async (req, res) =>{
         try{
@@ -424,7 +420,7 @@ app.post('/new-project', async (req, res) => {
     })
 
 
-    server.listen(PORT, ()=>{
-        console.log(`Running @ ${PORT}`);
+   
+ server.listen(PORT, ()=>{
+        console.log(`Server running on port ${PORT}`);
     });
-}).catch((e)=> console.log(`Error in db connection ${e}`));
