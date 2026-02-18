@@ -1,5 +1,6 @@
-import { Chat, Project } from "./Schema.js";
-import {v4 as uuid} from 'uuid';
+const Chat=require(".//Models/chatSchema");
+const Project=require(".//Models/projectSchema")
+const { v4: uuid } = require('uuid');
 
 const SocketHandler = (socket) =>{
 
@@ -90,4 +91,4 @@ const SocketHandler = (socket) =>{
 
 }
 
-export default SocketHandler;
+module.exports = SocketHandler;

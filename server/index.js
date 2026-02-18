@@ -1,12 +1,21 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import bcrypt from 'bcrypt';
-import { Application, Chat, Freelancer, Project, User } from './Schema.js';
-import { Server } from 'socket.io';
-import http from 'http';
-import SocketHandler from './SocketHandler.js';
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const bcrypt = require('bcrypt');
+// import {Chat} from './Models/chatSchema.js';
+// import {User} from './Models/userSchema.js';
+// import {Application} from './Models/applicationSchema.js';
+// import {Freelancer} from './Models/freelancerSchema.js';
+// import { Project } from './Models/projectSchema.js';
+const Chat=require("./Models/chatSchema.js");
+const User=require("./Models/userSchema.js");
+const Application=require("./Models/applicationSchema.js");
+const Freelancer=require("./Models/freelancerSchema.js");
+const Project=require("./Models/projectSchema.js");
+const { Server } = require("socket.io");
+const http = require('http');
+const SocketHandler = require('./SocketHandler.js');
 
 const app = express();
 
